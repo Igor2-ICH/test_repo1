@@ -12,6 +12,8 @@ if [ "$USAGE" -gt "$THRESHOLD" ]; then
   du -ah / | sort -rh | head -n 10
   # Находим и выводим самые большие файлы
   echo "Самые большие файлы:"
+  echo "Самые большие файлы:"
+  echo "Самые большие файлы:"
   find / -type f -exec du -ah {} + | sort -rh | head -n 10
 else
   echo "Дисковое пространство в корневом разделе занято на $USAGE%. Это меньше порогового значения $THRESHOLD%."
