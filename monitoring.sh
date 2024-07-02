@@ -7,6 +7,11 @@ os_version=$(cat /etc/os-release | grep "PRETTY_NAME" | cut -d '"' -f 2)
 current_date=$(date "+%Y-%m-%d")
 current_time=$(date "+%H:%M:%S")
 
+
+# Дата и время
+current_date=$(date "+%Y-%m-%d")
+current_time=$(date "+%H:%M:%S")
+
 # Время работы системы
 uptime_info=$(uptime -p)
 
